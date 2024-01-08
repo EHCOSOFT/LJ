@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LJ기획</title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="sidebar">
+            <div class="sidebar_logo">
+                <img src="img/logo.svg" alt=""><span>Rocket Engine LJ</span>
+            </div>
+            <ul class="sidebar_menu">
+                <li class="on">
+                    <a href="javascript:void(0);"><img src="img/i_main.svg" alt="메인">메인</a>
+                </li>
+            </ul>
+            <div class="sidebar_folder">
+                <p>폴더</p>
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">폴더 선택</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">폴더1</a></li>
+                        <li><a class="dropdown-item" href="#">폴더2</a></li>
+                        <li><a class="dropdown-item new" href="#">새로운 폴더 생성</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_wrap">
+            <header class="header">
+                <div class="sidemenu">
+                    <button type="button"><img src="img/list.svg" alt="메뉴"></button>
+                </div>
+                <div class="my_group">
+                    <img class="my_img" src="img/my.png" alt="프로필사진">
+                    <div class="dropdown">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">Makerkook</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="review_main">
+                <div class="review_top">
+                    <h1>MacBook Pro 15 Retina Touch Bar MV902</h1>
+                    <dl>
+                        <dt>옵션명</dt>
+                        <dd>스페이스 그레이</dd>
+                    </dl>
+                    <dl>
+                        <dt>구매수량</dt>
+                        <dd>99개</dd>
+                    </dl>
+                    <div class="dropdown">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/i_download.svg" alt="down">
+                            <span>Export</span>
+                            <img src="img/i_down_3.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">폴더1</a></li>
+                            <li><a class="dropdown-item" href="#">폴더2</a></li>
+                            <li><a class="dropdown-item new" href="#">새로운 폴더 생성</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn_primary btn_plus">
+                        <img src="img/i_plus.svg" alt="">
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav_tabs type2" id="review_tab" role="reviewtab">
+                            <li class="nav_item" role="presentation">
+                                <button class="nav_link active" id="all_tab" data-bs-toggle="pill" data-bs-target="#all"
+                                    type="button" role="presentation" aria-controls="all"
+                                    aria-selected="true">전체<span>999</span></button>
+                            </li>
+                            <li class="nav_item" role="presentation">
+                                <button class="nav_link" id="progress_tab" data-bs-toggle="pill"
+                                    data-bs-target="#progress" type="button" role="presentation"
+                                    aria-controls="progress" aria-selected="false">진행중<span>999</span></button>
+                            </li>
+                            <li class="nav_item" role="presentation">
+                                <button class="nav_link" id="complete_tab" data-bs-toggle="pill"
+                                    data-bs-target="#complete" type="button" role="presentation"
+                                    aria-controls="complete" aria-selected="false">완료<span>999</span></button>
+                            </li>
+                            <li class="nav_item" role="presentation">
+                                <button class="nav_link" id="stop_tab" data-bs-toggle="pill" data-bs-target="#stop"
+                                    type="button" role="presentation" aria-controls="review"
+                                    aria-selected="false">중단<span>999</span></button>
+                            </li>
+                        </ul>
+                        <div class="tab_content type2" id="review_tabContent">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all_tab">
+                                
+                                <table class="tab_cont_table type3">
+                                    <colgroup>
+                                        <col style="width: 60px;">
+                                        <col style="width: 100px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 100px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="check_group">
+                                                    <input type="checkbox" id="check_all">
+                                                    <label for="check_all"></label>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table_list">
+                                                    건수<button type="button" class="btn_down"></button>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table_list">
+                                                    진행율<button type="button" class="btn_down"></button>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table_list">
+                                                    시작일<button type="button" class="btn_down"></button>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table_list">
+                                                    완료일<button type="button" class="btn_down"></button>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table_list">
+                                                    포토리뷰 갯수<button type="button" class="btn_down"></button>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table_list">
+                                                    상태<button type="button" class="btn_down"></button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="check_group">
+                                                    <input type="checkbox" id="check_01">
+                                                    <label for="check_01"></label>
+                                                </div>
+                                            </td>
+                                            <td>100/100</td>
+                                            <td>100%</td>
+                                            <td>2023-02-14</td>
+                                            <td>2023-03-13</td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="status_group">
+                                                    <span class="default">대기중</span>
+                                                    <div class="dropdown">
+                                                        <button type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false"><img src="img/i_more.svg"
+                                                                alt=""></button>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item check" href="#">대기중</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">완료</a></li>
+                                                            <li><a class="dropdown-item" href="#">거절</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check_group">
+                                                    <input type="checkbox" id="check_01">
+                                                    <label for="check_01"></label>
+                                                </div>
+                                            </td>
+                                            <td>100/100</td>
+                                            <td>100%</td>
+                                            <td>2023-02-14</td>
+                                            <td>2023-03-13</td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="status_group">
+                                                    <span class="default">대기중</span>
+                                                    <div class="dropdown">
+                                                        <button type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false"><img src="img/i_more.svg"
+                                                                alt=""></button>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item check" href="#">대기중</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">완료</a></li>
+                                                            <li><a class="dropdown-item" href="#">거절</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check_group">
+                                                    <input type="checkbox" id="check_01">
+                                                    <label for="check_01"></label>
+                                                </div>
+                                            </td>
+                                            <td>100/100</td>
+                                            <td>100%</td>
+                                            <td>2023-02-14</td>
+                                            <td>2023-03-13</td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="status_group">
+                                                    <span class="default">대기중</span>
+                                                    <div class="dropdown">
+                                                        <button type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false"><img src="img/i_more.svg"
+                                                                alt=""></button>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item check" href="#">대기중</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">완료</a></li>
+                                                            <li><a class="dropdown-item" href="#">거절</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check_group">
+                                                    <input type="checkbox" id="check_01">
+                                                    <label for="check_01"></label>
+                                                </div>
+                                            </td>
+                                            <td>100/100</td>
+                                            <td>100%</td>
+                                            <td>2023-02-14</td>
+                                            <td>2023-03-13</td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="status_group">
+                                                    <span class="default">대기중</span>
+                                                    <div class="dropdown">
+                                                        <button type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false"><img src="img/i_more.svg"
+                                                                alt=""></button>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item check" href="#">대기중</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">완료</a></li>
+                                                            <li><a class="dropdown-item" href="#">거절</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="check_group">
+                                                    <input type="checkbox" id="check_01">
+                                                    <label for="check_01"></label>
+                                                </div>
+                                            </td>
+                                            <td>100/100</td>
+                                            <td>100%</td>
+                                            <td>2023-02-14</td>
+                                            <td>2023-03-13</td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="status_group">
+                                                    <span class="default">대기중</span>
+                                                    <div class="dropdown">
+                                                        <button type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false"><img src="img/i_more.svg"
+                                                                alt=""></button>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item check" href="#">대기중</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">완료</a></li>
+                                                            <li><a class="dropdown-item" href="#">거절</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tf">
+                                    <div class="dropup">
+                                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">10 <img
+                                                src="img/i_down_3.svg" alt=""></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">1</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">2</a></li>
+                                            <li><a class="dropdown-item" href="#">3</a></li>
+                                        </ul>
+                                        <p>Showing 1 - 10 of 100</p>
+                                    </div>
+                                    <div class="pagination">
+                                        <ul>
+                                            <li class="double_prev"><img src="img/i_double_prev.svg" alt=""></li>
+                                            <li class="prev"><img src="img/i_prev.svg" alt=""></li>
+                                            <li class="active">1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>...</li>
+                                            <li>5</li>
+                                            <li class="next"><img src="img/i_next.svg" alt=""></li>
+                                            <li class="double_next"><img src="img/i_double_next.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="progress_tab">
+                                2
+                            </div>
+                            <div class="tab-pane fade" id="complete" role="tabpanel" aria-labelledby="complete_tab">
+                                3
+                            </div>
+                            <div class="tab-pane fade" id="stop" role="tabpanel" aria-labelledby="stop_tab">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
